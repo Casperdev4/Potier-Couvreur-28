@@ -1,5 +1,5 @@
 body{margin:0;padding:0;background-color:#fff;margin-top:5%;font-family:'Roboto',sans-serif}
-hr{width:20%;margin-left:auto;margin-right:auto;height:6px;background:#985d29;border-radius:15px}
+hr{width:20%;margin-left:auto;margin-right:auto;height:6px;background:#ea9d59;border-radius:15px}
 h1,h2{color:#000;text-align:center}
 h1,h2,h3,h4{text-align:center}
 h1{font-weight:550;font-size:55px;margin-bottom:5%;margin-top:5%;line-height:1.3}
@@ -9,9 +9,9 @@ h4{margin:5% 3%;font-size:20px;font-weight:350}
 .hr{margin:5% auto auto;width:90%}
 p{color:#000;font-size:20px;margin-left:5%;margin-right:5%;text-align:center;padding:2%;line-height:1.7;word-spacing:5px}
 .bbbbbb h2{font-size:22px;margin-top:3%;margin-bottom:3%}
-.strong-color{color:#985d29}
+.strong-color{color:#ea9d59}
 a{text-decoration:none;color:#000;font-weight:600}
-.histoire{background-color:#bababa;padding:2% 0;width:80%;margin:10% auto;box-shadow:2px 3px 0 2px #985d29;border-radius:20px 20px 20px 0}
+.histoire{background-color:#bababa;padding:2% 0;width:80%;margin:10% auto;box-shadow:2px 3px 0 2px #ea9d59;border-radius:20px 20px 20px 0}
 .histoire h4{color:#000}
 #tarif{background-color:#bababa;padding:2%;width:100%;margin:10% auto}
 #tarif h2,#tarif h3,#tarif p{color:#000}
@@ -19,7 +19,7 @@ a{text-decoration:none;color:#000;font-weight:600}
 #tarif a{color:#000}
 .valeur h3,.valeur h4{margin-bottom:0;color:#000;text-align:left}
 .valeur h3,.valeur h4,.valeur p{text-align:left}
-.valeur{background-color:#bababa;width:75%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #985d29;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
+.valeur{background-color:#bababa;width:75%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #ea9d59;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
 .valeur.slide-in-done{opacity:1;transform:translateX(0)}
 .valeur .confiance{display:flex;align-items:center;margin-top:5%;margin-left:2%;font-size:35px;text-align:left}
 .valeur h3{display:flex;align-items:center;font-size:30px}
@@ -61,16 +61,16 @@ a{text-decoration:none;color:#000;font-weight:600}
 .gggggg img{display:flex;justify-content:center;width:30%;height:auto;margin:5% auto 3%}
 .gggggg h3{font-size:20px;text-align:left;font-weight:600;margin:10% 5% 3% 6%}
 #contact{margin-top:10%;padding:2%;background-color:#bababa}
-#contact h5{text-align:center;margin:5% 3% 3%;color:#985d29;font-weight:600;font-size:20px}
+#contact h5{text-align:center;margin:5% 3% 3%;color:#ea9d59;font-weight:600;font-size:20px}
 #contact p{color:#000}
 .liens a{margin:0;color:#000;font-size:16px}
 .liens-wp a,.liens-wp p{color:#000;font-size:12px}
-.bone{background-color:#985d29;color:#000;padding:1% 5%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%;z-index:1}
-.bouton-devis2{display:flex;justify-content:center;background-color:#985d29;font-size:22px;padding:1%;border-radius:25px;text-decoration:none;margin:2% 35%}
-.bbbbb{opacity:0;transform:translateY(50px);transition:opacity 0.5s,transform .5s;display:flex;justify-content:center;background-color:#985d29;color:#fff;font-size:20px;padding:1%;text-decoration:none;border-radius:25px;margin:2% 35%}
+.bone{background-color:#ea9d59;color:#000;padding:1% 5%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%;z-index:1}
+.bouton-devis2{display:flex;justify-content:center;background-color:#ea9d59;font-size:22px;padding:1%;border-radius:25px;text-decoration:none;margin:2% 35%}
+.bbbbb{opacity:0;transform:translateY(50px);transition:opacity 0.5s,transform .5s;display:flex;justify-content:center;background-color:#ea9d59;color:#fff;font-size:20px;padding:1%;text-decoration:none;border-radius:25px;margin:2% 35%}
 .bbbbb:hover{background-color:#bababa}
-.bbbbb:hover, .bone:hover,.bbbbbb button:hover{background-color:#985d29}
-.bbbbbb{display:flex;flex-direction:column;align-items:center;margin:5% auto;width:50%;background-color:#985d29;padding:20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);color:#fff;border-radius:20px}
+.bbbbb:hover, .bone:hover,.bbbbbb button:hover{background-color:#ea9d59}
+.bbbbbb{display:flex;flex-direction:column;align-items:center;margin:5% auto;width:50%;background-color:#ea9d59;padding:20px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);color:#fff;border-radius:20px}
 .bbbbbbiii{display:flex;justify-content:center;align-items:center;background-color:#fff;padding:1%;margin-left:37%;margin-right:37%;margin-bottom:20px;border-radius:20px}
 .bbbbbbiii img{width:100%;height:auto;border-radius:20px}
 .bbbbbb label{display:block;margin-bottom:8px;font-size:20px;color:#000}
@@ -112,7 +112,7 @@ body{margin-top:18%}
 #tarif{width:95%;margin-top:15%;margin-bottom:15%}
 #nos-valeurs{margin-bottom:13%}
 .valeur .confiance,.valeur h3{display:flex;text-align:left;margin-top:5%}
-.valeur{width:95%;padding-left:3%;padding-right:3%;margin-bottom:10%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #985d29;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
+.valeur{width:95%;padding-left:3%;padding-right:3%;margin-bottom:10%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #ea9d59;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
 .valeur .confiance{align-items:center;margin-left:5%;color:#000;font-size:40px}
 .valeur h3{align-items:center;color:#000;font-size:20px;margin-bottom:2%;margin-left:1%}
 .valeur h4,.valeur p{text-align:left;margin-top:3%}
@@ -153,7 +153,7 @@ body{margin-top:18%}
 .bbbbbb label{display:block;margin-bottom:8px;font-size:20px;margin-left:2%}
 .bbbbbb input,.bbbbbb select{width:100%;height:35px;padding:8px;margin-bottom:16px;box-sizing:border-box}
 .bbbbbb button{display:flex;justify-content:center;background-color:#000;color:#fff;padding:10px 40px;font-size:18px;margin:3% auto 2%;border:none;border-radius:4px;cursor:pointer}
-.bbbbbb button:hover{background-color:#985d29}
+.bbbbbb button:hover{background-color:#ea9d59}
 form{width:95%}
 .realisation-pc,.ct,.ct2ttttttt{display:none}
 }
