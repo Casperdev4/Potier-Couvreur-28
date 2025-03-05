@@ -55,7 +55,7 @@ a{text-decoration:none;color:#000;font-weight:600}
 .realisation-pc img{width:20%;height:auto}
 .cont img{display:flex;justify-content:center;width:15%;height:auto;margin:7% auto 5%}
 .cont h3{font-size:22px;margin-bottom:3%}
-.gggggg2 img{display:flex;justify-content:center;width:40%;height:auto;margin:7% auto 5%}
+.gggggg2 img{display:flex;justify-content:center;width:30%;height:auto;margin:7% auto 5%}
 .gggggg2 p,.gggggg p{margin-left:3%;margin-right:3%;text-align:left}
 .gggggg2 h3{font-size:20px;text-align:left;font-weight:600;margin:10% 5% 3% 6%}
 .gggggg img{display:flex;justify-content:center;width:30%;height:auto;margin:5% auto 3%}
@@ -131,7 +131,7 @@ body{margin-top:18%}
 .cccccc1 p,.cccccc2 p,.cccccc3 p,.cccccc4 p{margin-bottom:0;font-size:22px;letter-spacing:2px}
 .cont h2,.gggggg2 h2{font-size:25px;margin:15% 2% 4%}
 .cont img{display:flex;width:30%;margin-left:auto;margin-right:auto;margin-top:15%}
-.gggggg2 img{display:flex;width:70%;margin:10% auto 8%}
+.gggggg2 img{display:flex;width:50%;margin:10% auto 8%}
 .cont h3{margin-top:5%;margin-bottom:7%}
 .cont p,.gggggg2 p{text-align:left}
 .bone{padding:2% 8%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%}
