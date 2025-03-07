@@ -61,7 +61,7 @@ a{text-decoration:none;color:#000;font-weight:600}
 .gggggg img{display:flex;justify-content:center;width:30%;height:auto;margin:5% auto 3%}
 .gggggg h3{font-size:20px;text-align:left;font-weight:600;margin:10% 5% 3% 6%}
 #contact{margin-top:10%;padding:2%;background-color:#bababa}
-#contact h5{text-align:center;margin:5% 3% 3%;color:#ea9d59;font-weight:600;font-size:20px}
+#contact h5{text-align:center;margin:5% 3% 3%;color:#000;font-weight:600;font-size:20px}
 #contact p{color:#000}
 .liens a{margin:0;color:#000;font-size:16px}
 .liens-wp a,.liens-wp p{color:#000;font-size:12px}
