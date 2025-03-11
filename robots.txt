@@ -1,4 +1,5 @@
-User-agent: *
-Disallow: /traitement.php
-Disallow: /mentions-legales.html
-Sitemap: https://potier-couvreur-28.fr/sitemap.xml
+yakare admin webprime
+yakarecosmetics-58ngn4tm9i.live-website.com/wp-admin
+SFTP
+a1373869
+Allamlyly912!
