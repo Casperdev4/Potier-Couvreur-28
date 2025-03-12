@@ -13,13 +13,13 @@ p{color:#000;font-size:20px;margin-left:5%;margin-right:5%;text-align:center;pad
 a{text-decoration:none;color:#000;font-weight:600}
 .histoire{background-color:#bababa;padding:2% 0;width:80%;margin:10% auto;box-shadow:2px 3px 0 2px #ea9d59;border-radius:20px 20px 20px 0}
 .histoire h4{color:#000}
-#tarif{background-color:#bababa;padding:2%;width:100%;margin:10% auto}
+#tarif{background-color:#c7c7c7;padding:2%;width:100%;margin:10% auto}
 #tarif h2,#tarif h3,#tarif p{color:#000}
 #tarif p{text-align:left}
 #tarif a{color:#000}
 .valeur h3,.valeur h4{margin-bottom:0;color:#000;text-align:left}
 .valeur h3,.valeur h4,.valeur p{text-align:left}
-.valeur{background-color:#bababa;width:75%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #ea9d59;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
+.valeur{background-color:#c7c7c7;width:75%;margin-left:auto;margin-right:auto;box-shadow:2px 3px 0 2px #ea9d59;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s;border-radius:20px 20px 20px 0}
 .valeur.slide-in-done{opacity:1;transform:translateX(0)}
 .valeur .confiance{display:flex;align-items:center;margin-top:5%;margin-left:2%;font-size:35px;text-align:left}
 .valeur h3{display:flex;align-items:center;font-size:30px}
