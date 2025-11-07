@@ -68,7 +68,7 @@ try {
     $mail->Port       = 465;
 
     $mail->setFrom('contact@webprime.fr', 'Potier Couvreur');
-    $mail->addAddress('contact@potier-couvreur-28.fr');
+    $mail->addAddress('potiercouverture@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
