@@ -252,6 +252,11 @@
                 <img src="entreprise-potier.webp" alt="couvreur autour de moi">
             </div>
             <form action="https://formsubmit.co/webprime91@hotmail.com" method="POST" onsubmit="return validateForm()">
+                <!-- Honeypot anti-spam -->
+                <div class="hp-wrap">
+                    <label for="website">Votre site web :</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_cc" value="potiercouverture@gmail.com">
                 <input type="hidden" name="_next" value="https://potier-couvreur-28.fr/">

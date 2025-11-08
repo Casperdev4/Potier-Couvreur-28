@@ -80,6 +80,18 @@ form{width:90%}
 .bbbbbb textarea{width:100%;padding:8px;margin-bottom:3%;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000;resize:vertical}
 .liens-wp a,.liens-wp h6{font-size:13px;color:#000;text-align:center;font-weight:300;margin-top:3%}
 .zzzzzz,.cccccccccc,.realisation{display:none}
+
+.hp-wrap {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 @media screen and (max-width:767.98px) {
 h2{color:#000}
 h4,p{color:#000;text-align:center}
