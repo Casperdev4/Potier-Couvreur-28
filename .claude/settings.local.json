@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(xxd:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i 's/\\\\xc2\\\\xa0/ /g' \"$file\")",
+      "Bash(done)"
+    ]
+  }
+}
