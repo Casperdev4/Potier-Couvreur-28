@@ -284,15 +284,14 @@
                 <img src="entreprise-potier.webp" alt="devis réparation toiture">
             </div>
 
-            <form action="traitement.php" method="post" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <input type="hidden" name="from" value="Entreprise Potier">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="REPARATION TOITURE">REPARATION TOITURE</option>
@@ -302,12 +301,12 @@
                     <option value="PEINTURE">PEINTURE</option>
                     <option value="GOUTTIERE">GOUTTIERE</option>
                     <option value="FENETRE DE TOIT">FENETRE DE TOIT</option>
-                    <option value="RAVALEMENT">PEINTURE DE FAÇADE</option>
+                    <option value="PEINTURE DE FACADE">PEINTURE DE FACADE</option>
                     <option value="URGENCE FUITE">URGENCE FUITE</option>
                     <option value="AUTRE">AUTRE</option>
                 </select>
                 <label for="comments">Commentaires :</label>
-                <textarea id="comments" name="commentaires" rows="4" required></textarea>
+                <textarea id="comments" name="commentaires" rows="4"></textarea>
                 <button type="submit">ENVOYER</button>
             </form>
         </div>
@@ -412,28 +411,38 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+    async function submitToWebPrime(e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const btn = form.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            const formData = new FormData(form);
+            const response = await fetch('https://webprime.app/webhook/contact/dc0e07b75a3674880cf9a76be9eab2c89429481cd5efa53e4dcb976d530c0ddf', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.href = 'https://potier-couvreur-28.fr/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^(06|07|\+336|\+337)\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 
