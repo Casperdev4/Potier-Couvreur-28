@@ -5,7 +5,16 @@
       "Bash(xxd:*)",
       "Bash(for:*)",
       "Bash(do sed -i 's/\\\\xc2\\\\xa0/ /g' \"$file\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git merge:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(python update_forms.py:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nMise a jour formulaires avec webhook WebPrime\n\n- Remplacement formsubmit.co par webhook WebPrime\n- Ajout champ email\n- Script submitToWebPrime async\n- Anti-spam honeypot\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)"
     ]
   }
 }
