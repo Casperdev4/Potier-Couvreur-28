@@ -174,3 +174,24 @@ body{margin-top:18%}
 form{width:95%}
 .realisation-pc,.ct,.ct2ttttttt{display:none}
 }
+
+/* FAQ Section */
+.faq-section{background-color:#f5f5f5;padding:5% 5%;margin:10% 0 0}
+.faq-section h2{margin:0 0 5%;font-size:28px}
+.faq-container{max-width:900px;margin:0 auto}
+.faq-item{background:#fff;margin-bottom:15px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);overflow:hidden}
+.faq-question{width:100%;padding:20px 50px 20px 20px;border:none;background:#fff;text-align:left;font-size:18px;font-weight:600;cursor:pointer;position:relative;color:#000;font-family:'Montserrat',sans-serif}
+.faq-question::after{content:'+';position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:24px;color:#ea9d59;transition:transform 0.3s}
+.faq-checkbox{display:none}
+.faq-checkbox:checked+.faq-question::after{content:'-'}
+.faq-checkbox:checked+.faq-question{background:#ea9d59;color:#fff}
+.faq-checkbox:checked+.faq-question::after{color:#fff}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;background:#fff}
+.faq-checkbox:checked~.faq-answer{max-height:500px;transition:max-height 0.5s ease-in}
+.faq-answer p{padding:20px;margin:0;text-align:left;font-size:16px;line-height:1.6;color:#333}
+@media screen and (max-width:767.98px){
+.faq-section{padding:10% 3%;margin:15% 0 0}
+.faq-section h2{font-size:22px;margin-bottom:8%}
+.faq-question{font-size:16px;padding:15px 45px 15px 15px}
+.faq-answer p{font-size:15px;padding:15px}
+}
