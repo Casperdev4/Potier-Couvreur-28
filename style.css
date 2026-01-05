@@ -233,15 +233,15 @@ form{width:100%}
     .zzzzzz a{font-size:16px;font-weight:500;color:#fff}
 
     /* FAQ Mobile */
-    .faq-section{padding:40px 15px;margin:40px 0 0}
-    .faq-section h2{font-size:22px;margin:0 0 25px}
-    .faq-container{max-width:100%;padding:0}
-    .faq-item{margin-bottom:12px;border-radius:8px}
-    .faq-question{font-size:14px;padding:16px 40px 16px 15px;line-height:1.4}
-    .faq-question::after{right:15px;font-size:20px}
+    .faq-section{padding:40px 10px;margin:40px 0 0}
+    .faq-section h2{font-size:20px;margin:0 0 25px}
+    .faq-container{max-width:100%;padding:0;margin:0}
+    .faq-item{margin-bottom:10px;border-radius:8px;overflow:hidden}
+    .faq-question{display:block;width:100%;font-size:13px;padding:15px 35px 15px 12px;line-height:1.4;text-align:left;box-sizing:border-box}
+    .faq-question::after{right:10px;font-size:18px}
     .faq-answer{max-height:0;overflow:hidden}
     .faq-checkbox:checked~.faq-answer{max-height:600px}
-    .faq-answer p{font-size:14px;padding:15px;line-height:1.6}
+    .faq-answer p{font-size:13px;padding:12px;line-height:1.5}
 }
 
 /* ==================== LARGE SCREENS ==================== */
