@@ -14,7 +14,10 @@
       "Bash(grep:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nMise a jour formulaires avec webhook WebPrime\n\n- Remplacement formsubmit.co par webhook WebPrime\n- Ajout champ email\n- Script submitToWebPrime async\n- Anti-spam honeypot\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(powershell -Command \"Get-ChildItem -Filter *.html | ForEach-Object { \\(Get-Content $_FullName -Raw\\) -replace ''\\\\+33184244858'', ''+33185470071'' -replace ''01 84 24 48 58'', ''01 85 47 00 71'' -replace ''01 84 24 48\\\\s+58'', ''01 85 47 00 71'' -replace ''Dimanche : 06h - 00h30'', ''Dimanche : 08h - 20h'' | Set-Content $_FullName -NoNewline }\")",
+      "Bash(python:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
