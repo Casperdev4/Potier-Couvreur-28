@@ -272,7 +272,7 @@
                 <img src="entreprise-potier.webp" alt="devis velux">
             </div>
 
-            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
+            <form id="contactForm" action="https://formsubmit.co/potiercouverture@gmail.com" method="POST" onsubmit="return sendBoth(event)">
                 <input type="hidden" name="from" value="Entreprise Potier">
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
@@ -431,36 +431,20 @@
         });
     </script>
     <script>
-    async function submitToWebPrime(e) {
+    function sendBoth(e) {
         e.preventDefault();
-        const form = document.getElementById('contactForm');
-        const btn = form.querySelector('button[type="submit"]');
-        const originalText = btn.textContent;
-
-        if (form._gotcha && form._gotcha.value) return false;
-
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var honeyField = form.querySelector('[name="_honey"]');
+        if (honeyField && honeyField.value) return false;
         btn.textContent = 'Envoi en cours...';
         btn.disabled = true;
-
-        try {
-            const formData = new FormData(form);
-            const response = await fetch('https://webprime.app/webhook/contact/dc0e07b75a3674880cf9a76be9eab2c89429481cd5efa53e4dcb976d530c0ddf', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                window.location.href = 'https://potier-couvreur-28.fr/';
-            } else {
-                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
-                btn.textContent = originalText;
-                btn.disabled = false;
-            }
-        } catch (error) {
-            alert('Erreur de connexion. Veuillez reessayer.');
-            btn.textContent = originalText;
-            btn.disabled = false;
-        }
+        var formData = new FormData(form);
+        fetch('https://webprime.app/webhook/contact/dc0e07b75a3674880cf9a76be9eab2c89429481cd5efa53e4dcb976d530c0ddf', {
+            method: 'POST',
+            body: formData
+        }).catch(function() {});
+        form.submit();
         return false;
     }
     </script>
